@@ -1,5 +1,6 @@
 {
   "name": "results-summary-component",
+  "homepage": "https://devmd1997.github.io/results-summary-component",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,7 +10,9 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
